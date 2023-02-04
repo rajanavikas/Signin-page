@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Company Connect</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            background-color: #F3F7FF !important;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05);
+            /* box-shadow: 0 7px 2px rgba(0,0,0,0.1); */
+            font-family: 'Poppins', sans-serif;
+            color: #1d2f6f;
+            font-size: 18px;
+            line-height: 33px;
+        }
+
+        .nbar {
+            margin: 0px 2%;
+        }
+
+        .navl {
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 10px;
+
+        }
+
+        .navr {
+            display: inline-block;
+            float: right;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+        }
+
+        .nav-tick {
+            display: inline-block;
+            margin-right: 10px;
+            width: 25%;
+        }
+
+        .nav-tick img {
+            width: 100%;
+        }
+
+        .nav-men {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .nav-men img {
+            width: 70%;
+        }
+
+        .nav-men img:focus {
+            outline: none;
+        }
+
+        .nav-bell {
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        .nav-bell img {
+            width: 70%;
+        }
+
+        .nav-logout {
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        .nav-logout img {
+            width: 70%;
+            margin-top: 0px;
+        }
+
+        .dropdown-toggle::after {
+            content: none;
+        }
+
+        .dropdown-toggle:focus {
+            outline: none !important;
+        }
+
+        /* 
+            .dropdown-menu {
+                color: #1d2f6f;
+                margin-top: 38px;
+            } */
+
+        .men {
+            width: 300px;
+            border-radius: 15px;
+        }
+
+        .dropdown-item {
+            margin-top: 5px;
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        /* 
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+                margin-left: -1px;
+                -webkit-border-radius: 0 6px 6px 6px;
+                -moz-border-radius: 0 6px 6px;
+                border-radius: 0 6px 6px 6px;
+            }
+    
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block;
+            }
+    
+            .dropdown-menu:hover {
+                display: block;
+            } */
+
+        .dropdown-submenu>a:after {
+            display: block;
+            content: " ";
+            float: right;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-style: solid;
+            border-width: 0px 0 0px 0px;
+            border-left-color: #ccc;
+            margin-top: 5px;
+            margin-right: -10px;
+        }
+
+        .dropdown-submenu:hover>a:after {
+            border-left-color: #fff;
+        }
+
+        /* .dropdown-submenu.pull-left {
+                float: none;
+            }
+    
+            .dropdown-submenu.pull-left>.dropdown-menu {
+                left: -100%;
+                margin-left: 10px;
+                -webkit-border-radius: 6px 0 6px 6px;
+                -moz-border-radius: 6px 0 6px 6px;
+                border-radius: 6px 0 6px 6px;
+            } */
+
+        a {
+            text-decoration: none;
+            color: #1d2f6f;
+        }
+
+        a:link,
+        a:hover {
+            text-decoration: none;
+            color: #1d2f6f;
+        }
+
+        .men li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
+        .hello_tar {
+            background-color: #fff;
+            padding: 6px;
+            border-radius: 14px;
+            padding-left: 10px;
+            box-shadow: 1px 3px 4px 3px rgba(0, 0, 0, 0.15);
+        }
+
+        .buy {
+            background-image: linear-gradient(to right, #6AA5FE, #D1E4FF);
+            border-radius: 25px;
+            margin-left: 30px;
+            padding: 10px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .buy:hover,
+        .buy:link {
+            text-decoration: none;
+            color: #1d2f6f;
+        }
+
+        .dropdown-menu li {
+            font-weight: 500;
+        }
+
+        .msgs {
+            font-size: 18px;
+            color: #1d2f6f;
+            font-weight: 500;
+        }
+
+        .msgs:link,
+        .msgs:hover {
+            text-decoration: none;
+            color: #1d2f6f;
+            /* background-color: #F3F7FF; */
+        }
+
+        /* @media(max-width:625px){
+          .men{
+              width: 150px;
+          } */
+
+
+        .nav-logout {
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .nav-logout img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .dropdown-toggle::after {
+            content: none;
+        }
+
+        .dropdown-toggle:focus {
+            outline: none !important;
+        }
+
+
+        .dropdown-item {
+            margin-top: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1d2f6f;
+        }
+
+        a:link,
+        a:hover {
+            text-decoration: none;
+            color: #1d2f6f;
+        }
+
+        .buy {
+            background-image: linear-gradient(to right, #6AA5FE, #D1E4FF);
+            border-radius: 25px;
+            margin-left: 10px;
+            padding: 10px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .buy:hover,
+        .buy:link {
+            text-decoration: none;
+            color: #1d2f6f;
+        }
+
+        .dropdown-menu li {
+            font-weight: 500;
+        }
+
+        .msgs {
+            font-size: 18px;
+            color: #1d2f6f;
+            font-weight: 500;
+        }
+
+        .msgs:link,
+        .msgs:hover {
+            text-decoration: none;
+            color: #1d2f6f;
+            /* background-color: #F3F7FF; */
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
+        .sub_drop {
+            margin-left: 3px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+
+        @media screen and (min-width:1025px) {
+            .men {
+                width: 300px;
+                margin-top: 38px;
+            }
+
+            .bellu {
+                width: auto;
+            }
+
+            .nav-logout img {
+
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width:1240px) {
+            .nav-link {
+                padding-right: 0px !important;
+                padding-left: 8px !important;
+                font-size: 12px !important;
+            }
+
+            #mySidenav {
+                margin-left: -110px !important;
+                width: 25% !important;
+            }
+
+            .hello_tar>span {
+                font-size: 14px !important;
+
+            }
+        }
+
+        @media screen and (max-width:652px) {
+            .nav-link {
+                font-size: 11px !important;
+            }
+
+            .hello_tar>span {
+                font-size: 13px !important;
+
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            .nav-bell img {
+                width: 30px;
+            }
+
+            .nav-tick img {
+                width: 50px;
+            }
+
+            .nav-men {
+                margin-left: -15px;
+            }
+
+            .nav-bell {
+                margin-left: -10px;
+            }
+
+            .nav-men img {
+                width: 30px;
+            }
+
+            .nav-logout img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .navl {
+                width: 75%;
+            }
+
+            .navr {
+                width: 18%;
+            }
+
+
+        }
+
+        @media screen and (min-width:470px) and (max-width:576px) {
+            .nav-men {
+                margin-left: -45px;
+            }
+        }
+
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a:focus {
+            outline: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-sidermenu.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap-sidermenu.js"></script>
+    <script>
+        function openNav() {
+            if (document.getElementById("mySidenav").style.display == "none") {
+                document.getElementById("mySidenav").style.display = "block";
+                document.getElementById("mySidenav").style.marginTop = "100px";
+                document.getElementById("mySidenav").style.marginLeft = "-130px";
+
+            }
+            else {
+                document.getElementById("mySidenav").style.display = "none";
+            }
+            // if(document.getElementById("mySidenav").style.marginLeft=="-600px")
+            //     {
+            //      //document.getElementById("mySidenav").style.display = "block";
+            //       document.getElementById("mySidenav").style.marginLeft = "-140px";
+            //     }
+            //   else{
+            //     document.getElementById("mySidenav").style.marginLeft="-600px";
+            // }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <nav style="background-color: #F3F7FF">
+        <div class="nbar" style="background-color: #F3F7FF;">
+            <div class="navl">
+                <div class="nav-tick"><img src="tick.png" /></div>
+
+
+                <div class="nav-men">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" onclick="openNav()">
+                        <img src="menu.png" />
+                    </a>
+
+
+                    <ul id="mySidenav" class="dropdown-menu men  multi-level menu-siderbar nav flex-column"
+                        aria-labelledby="dropdownMenuLink"
+                        style="display:none;padding-right:10px;width:20%;background-color:#FFFFFF;">
+                        <!-- <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link nav-link-parent">
+                                        <i class="menu-icon fa fa-th"></i> jQueryScript
+                                    </a>
+                                    <ul class="menu-siderbar-child nav flex-column">
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link active">
+                                                <i class="menu-icon fa fa-bolt"></i> jQuery
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i class="menu-icon fa fa-bolt"></i> HTML5
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:;" class="nav-link">
+                                                <i class="menu-icon fa fa-bolt"></i> CSS/CSS3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                        <li class="nav-item">
+                            <a href="javascript:;" class="hello_tar nav-link nav-link-parent" data-toggle="dropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label"
+                                    style="color:#1D2F6F;font-weight:600;font-size:17px;">Internships&nbsp;</span></a>
+                            <ul class="menu-siderbar-child nav flex-column"
+                                style="border-radius: 10px;font-size: 17px;width:100%;height:60%;background-color:#FFFFFF;box-shadow:1px 2px 2px 1px rgba(0,0,0,0.2);padding-top:30px;padding-bottom:30px;margin-top:-10px;position:relative;z-index:-1;">
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#PostInternship</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#MyColleges</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#IDirect</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="hello_tar nav-link nav-link-parent" data-toggle="dropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label"
+                                    style="color:#1D2F6F;font-weight:600;font-size:17px;">Chat&nbsp;</span></a>
+                            <ul class="menu-siderbar-child nav flex-column"
+                                style="margin-left: 1px; border-radius: 10px;font-size: 17px;width:100%;height:60%;background-color:#FFFFFF;box-shadow:1px 2px 2px 1px rgba(0,0,0,0.2);padding-top:30px;padding-bottom:30px;margin-top:-10px;position:relative;z-index:-1;">
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#MyCollege</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#Company</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label"
+                                    style="color:#1D2F6F;font-weight:600;font-size:17px;">Day to Day
+                                    Reports&nbsp;</span></a></li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="hello_tar nav-link nav-link-parent" data-toggle="dropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label"
+                                    style="color:#1D2F6F;font-weight:600;font-size:17px;">My Profile&nbsp;</span></a>
+                            <ul class="menu-siderbar-child nav flex-column"
+                                style="margin-left: 1px; border-radius: 10px;font-size: 17px;width:100%;height:100%;background-color:#FFFFFF;box-shadow:1px 2px 2px 1px rgba(0,0,0,0.2);padding-top:30px;padding-bottom:30px;margin-top:-10px;position:relative;z-index:-1;">
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Edit
+                                        Account</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Edit
+                                        Internships</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Change
+                                        Pwd/Email id/ phone no.</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Deactivate
+                                        Account</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Delete
+                                        Permanently</a>
+                                </li>
+                                <li
+                                    style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;">
+                                    <a href="javascript:;" class="nav-link active"
+                                        style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Terms
+                                        and Conditions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label"
+                                    style="color:#1D2F6F;font-weight:600;font-size:17px;">Intern
+                                    Evaluation&nbsp;</span></a></li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label"
+                                    style="color:#1D2F6F;font-weight:600;font-size:17px;">College
+                                    Evaluation&nbsp;</span></a></li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label"
+                                    style="color:#1D2F6F;font-weight:600;font-size:17px;">Create
+                                    Internships&nbsp;</span></a></li>
+                    </ul>
+
+
+                </div>
+
+
+                <!-- <div class="nav-men"><img src="menu.png"/></div> -->
+                <div class="nav-bell">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="bell.png" />
+                    </a>
+
+                    <div class="dropdown-menu bellu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item msgs" href="#">Welcome to TalentServe <br> Log in every day to receive
+                            notifications<br>for your job</a>
+
+                    </div>
+                </div>
+
+
+                <!-- <div class="nav-bell"><img src="bell.png"/></div> -->
+            </div>
+            <div class="navr">
+                <a href="#">
+                    <div class="nav-logout"><img src="logout.png" /></div>
+
+                </a>
+            </div>
+        </div>
+    </nav>
+    </head>
+
+    <body>
+        <div class="whole_card"
+            style="background-color: #F3F7FF;margin-top: 50px; margin-left: 100px;color: #1D2F6F;width: 880px">
+            <form>
+                <div class="form-group row">
+                    <div class="d-flex flex-row bd-highlight m-3">
+                        <label for="input" class="col-sm-3 col-form-label" style="color:#1D2F6F;white-space:nowrap;
+"><b>College</b></label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="d-flex flex-row bd-highlight m-3">
+                        <label for="input" class="col-sm-3 col-form-label" style="color:#1D2F6F;white-space:nowrap;
+"><b>Connect with Companies</b></label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="d-flex flex-row bd-highlight m-3">  
+                            <input style="width: 100%;margin-left: 0%;" type="text" placeholder="Search Companies" name="search">
+                            <button style="border: none;" type="submit">Submit</button>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="d-flex flex-row bd-highlight m-3">
+                        <div class="col-sm-9">
+                            <select
+                                style="border: none;box-shadow: 0px -3px 6px 2px rgba(0,0,0,0.2);width: 200%;color:#1D2F6F;height: 150%;"
+                                name="Select depeartments for Internships">
+                                <option value="None" selected>Select depeartments for Internships</option>
+                                <option value="None"><b>1</b></option>
+                                <option value="None"><b>2</b></option>
+                                <option value="None"><b>3</b></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="company_logo">
+                    <div class="form-group row m-2" style="justify-items:center;">
+                        <div class="d-flex flex-row bd-highlight m-3"
+                            style=" height:170px; width:30%; box-shadow: 0px -3px 6px 2px rgba(0,0,0,0.2);background-color: #ffff;">
+                            <label for="input" class="col-form-label" style="display: flex;margin-left: auto;margin-right: auto;align-items: center;color:#1D2F6F; white-space:nowrap;
+        "><b>Company Logo Here</b></label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

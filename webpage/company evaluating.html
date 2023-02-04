@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+  <title>TalentServe</title>
+  <style>
+    body {
+      background-color: #f3f7ff;
+    }
+
+    .drop {
+      width: 250px;
+      height: 60px;
+      border: none;
+      box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
+      font-family: 'Poppins', sans-serif;
+      color: #1D2F6F;
+      font-size: 20px;
+      display: inline-block;
+      border-radius: 15px;
+
+    }
+
+    .text1 {
+      margin-top: 20px;
+    }
+
+    .rate {
+      float: left;
+      height: 46px;
+      padding: 0 10px;
+    }
+
+    .rate:not(:checked)>input {
+      position: absolute;
+      top: -9999px;
+    }
+
+    .rate:not(:checked)>label {
+      float: right;
+      width: 1em;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: 30px;
+      color: #ccc;
+    }
+
+    .rate:not(:checked)>label:before {
+      content: '★ ';
+    }
+
+    .rate>input:checked~label {
+      color: #ffc700;
+    }
+
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+      color: #deb217;
+    }
+
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
+      color: #c59b08;
+    }
+
+    .text {
+      border: none;
+      margin-left: 200px;
+      margin-top: 10px;
+      margin-right: 120px;
+      border-radius: 20px;
+    }
+
+    input[type=radio] {
+      width: 30px;
+      height: 30px;
+      background-color: #1D2F6F;
+      border: 2px #1D2F6F;
+    }
+
+    input[type='radio']:checked:before {
+      background: #1D2F6F;
+    }
+
+    .r1 {
+      margin-left: 200px;
+    }
+
+    .r2 {
+      margin-left: 40px;
+    }
+    .rate{
+  text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;text-align: center;"> Company Evaluating Intern</h2>
+  <center><select name="departments" id="departments" class="drop">
+      <option value="volvo" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Select
+          departments</strong></option>
+      <option value="saab" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Computer Science</strong>
+      </option>
+      <option value="opel" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Marketing</strong></option>
+      <option value="audi" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Information
+          Technology</strong></option>
+    </select>
+    <select name="departments" id="departments" class="drop">
+      <option value="volvo" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Name of the
+          Intern</strong></option>
+      <option value="saab" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Computer Science</strong>
+      </option>
+      <option value="opel" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Marketing</strong></option>
+      <option value="audi" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>Information
+          Technology</strong></option>
+    </select>
+  </center>
+  <div class="rate">
+    <h3 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;display: inline-block;margin-left: 200px;">Rate the
+      Intern:</h3>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+  <div>
+    <textarea rows="7" cols="90" placeholder="Write your experience with the Intern" style="text-align:initial;"
+      class="text"></textarea>
+  </div>
+  <h3 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;margin-left: 200px;" class="">Did the Intern finish the
+    Internship with the company?</h3>
+  <div style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;font-size: 20px;">
+    <input type="radio" id="html" name="fav_language" value="HTML" class="r1">
+    <label for="html">
+      <h3>Yes</h3>
+    </label>
+    <input type="radio" id="css" name="fav_language" value="CSS" class="r2">
+    <label for="css">
+      <h3>No</h3>
+    </label>
+  </div>
+  <h3
+    style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;margin-left: 200px; margin-top: 20px;display: inline-block;">
+    When did the Internship Start?</h3>
+  <select name="departments" id="departments" class="drop" style="width:60px;display: inline-block;">
+    <option value="volvo" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>1</strong></option>
+    <option value="saab" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>2</strong></option>
+    <option value="opel" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>3</strong></option>
+    <option value="audi" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>4</strong></option>
+  </select>
+  <select name="departments" id="departments" class="drop" style="width:60px;display: inline-block;">
+    <option value="volvo" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>1</strong></option>
+    <option value="saab" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>2</strong></option>
+    <option value="opel" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>3</strong></option>
+    <option value="audi" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>4</strong></option>
+  </select>
+  <select name="departments" id="departments" class="drop" style="width:90px;display: inline-block;">
+    <option value="volvo" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>2021</strong></option>
+    <option value="saab" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>2022</strong></option>
+    <option value="opel" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>2023</strong></option>
+    <option value="audi" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>24</strong></option>
+  </select>
+  <h3
+    style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;margin-left: 200px; margin-top: 20px;display: inline-block;">
+    The total duration of the Internship</h3>
+  <h5 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F; display: inline-block;margin-left: 10px;">Months</h5>
+  <select name="departments" id="departments" class="drop" style="width:60px;display: inline-block;">
+
+    <option value="volvo" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>1</strong></option>
+    <option value="saab" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>2</strong></option>
+    <option value="opel" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>3</strong></option>
+    <option value="audi" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>4</strong></option>
+  </select>
+  <h5 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;display: inline-block;margin-left: 10px;">Days</h5>
+  <select name="departments" id="departments" class="drop" style="width:60px;display: inline-block;">
+
+    <option value="volvo" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>1</strong></option>
+    <option value="saab" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>2</strong></option>
+    <option value="opel" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>3</strong></option>
+    <option value="audi" style="font-family:'Poppins', sans-serif;color: #1D2F6F;"><strong>4</strong></option>
+  </select>
+  <h3 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;margin-left: 200px; margin-top: 20px;"> Type of
+    Internship</h3>
+  <div style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;font-size: 20px;margin-top: 20px;">
+    <input type="radio" id="html" name="fav_language" value="HTML" class="r1">
+    <label for="html">
+      <h3>Paid</h3>
+    </label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS" class="r1">
+    <label for="css">
+      <h3>Paid with PPO</h3>
+    </label><br>
+    <input type="radio" id="html" name="fav_language" value="HTML" class="r1">
+    <label for="html">
+      <h3>Unpaid</h3>
+    </label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS" class="r1">
+    <label for="css">
+      <h3>Volunteering</h3>
+    </label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS" class="r1">
+    <label for="css">
+      <h3>Performance-based</h3>
+    </label>
+  </div>
+  <div>
+    <textarea rows="2" cols="30" placeholder="if No mention the reason" class="text"></textarea>
+  </div>
+
+  <h3 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;margin-left: 200px;">Have you processed the stipend for
+    the Intern?</h3>
+  <div style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;font-size: 20px;">
+    <input type="radio" id="html" name="fav_language" value="HTML" class="r1">
+    <label for="html">
+      <h3>Yes</h3>
+    </label>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">
+      <h3>No</h3>
+    </label>
+  </div>
+  <h3 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;margin-left: 200px;">Rewards and Recognitions for the
+    Intern?</h3>
+  <div style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;font-size: 20px;">
+    <input type="radio" id="html" name="fav_language" value="HTML" class="r1">
+    <label for="html">
+      <h3>Yes</h3>
+    </label>
+    <input type="radio" id="css" name="fav_language" value="CSS" class="r2">
+    <label for="css">
+      <h3>No</h3>
+    </label>
+  </div>
+  <div>
+    <textarea rows="7" cols="70" placeholder="Write your experience with the Intern" class="text"></textarea>
+  </div>
+  <h3 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;display:inline-block;margin-left: 200px;">Did your
+    company provide proper training to the Intern?</h3>
+  <div style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;font-size: 20px;">
+    <input type="radio" id="html" name="fav_language" value="HTML" class="r1">
+    <label for="html">
+      <h3>Yes</h3>
+    </label>
+    <input type="radio" id="css" name="fav_language" value="CSS" class="r2">
+    <label for="css">
+      <h3>No</h3>
+    </label>
+    <textarea rows="2" cols="30" placeholder="if No mention the reason" class="text"
+      style="display:inline-block;margin-top: 10px;"></textarea>
+  </div>
+  <div class="rate">
+    <h3 style=" font-family:  'Poppins', sans-serif;color: #1D2F6F;margin-left: 200px;">Rate your Company’s satisfaction
+      with the Intern’s performance from 1-5?</h3>
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 star</label>
+  </div>
+</body>
+
+</html>

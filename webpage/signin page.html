@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMM9T5GG60"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MMM9T5GG60');
+    </script>
+
+
+    <title>Candidate - SignUp</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19efc023fd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <style>
+        html,
+        body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container_candidate-fluid {
+            padding: 0 0 1% 0;
+        }
+
+        #example3 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 20px 20px #8e9eab;
+            width: 100%;
+            border-radius: 15px 20px;
+        }
+
+        h1 {
+            font-weight: 400;
+            margin: 0;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        /* a {
+        color: #333;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 15px 0;
+    } */
+
+        .container_candidate {
+            background: #fff;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 100%;
+            min-height: 480px;
+        }
+
+        #signincol .form-container_candidate form {
+            background: #fff;
+            padding: 0 50px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #signupcol .form-container_candidate form {
+            background: #fff;
+            padding: 0 50px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .form-container_candidate form {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social-container_candidate {
+            margin: 20px 0;
+        }
+
+        .social-container_candidate a {
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            height: 40px;
+            width: 40px;
+        }
+
+        .form-container_candidate .text-input {
+            background: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 6px 0;
+            width: 100%;
+        }
+
+        .form-container_candidate .password-input {
+            background: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 6px 0;
+            width: 100%;
+        }
+
+        .form-container_candidate .password-input input {
+            background: #eee;
+            border: none;
+            height: 100%;
+            float: left;
+            width: 90%;
+            outline: none;
+        }
+
+        .field-icon {
+            float: right;
+            position: relative;
+            /* margin-top:0.5rem; */
+        }
+
+        button {
+            border-radius: 20px;
+            border: 1px solid #302b63;
+            background: #302b63;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+        button:active {
+            transform: scale(.95);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        button.ghost {
+            background: transparent;
+            border-color: #fff;
+        }
+
+        .form-container_candidate {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            transition: all .6s ease-in-out;
+        }
+
+        #signincol .form-container_candidate {
+            position: relative;
+        }
+
+        #signupcol .form-container_candidate {
+            position: relative;
+        }
+
+        .sign-in-container_candidate {
+            left: 0;
+            width: 50%;
+            z-index: 2;
+        }
+
+        .sign-up-container_candidate {
+            left: 0;
+            width: 50%;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .overlay-container_candidate {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            transition: transform .6s ease-in-out;
+            z-index: 100;
+        }
+
+        .overlay {
+            background: #ff416c;
+            background: #000046;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #1CB5E0, #000046);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #fff;
+            position: relative;
+            left: -100%;
+            height: 100%;
+            width: 200%;
+            transform: translateY(0);
+            transition: transform .6s ease-in-out;
+        }
+
+        .overlay-panel {
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 40px;
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform .6s ease-in-out;
+        }
+
+        .overlay-right {
+            right: 0;
+            transform: translateY(0);
+        }
+
+        .overlay-left {
+            transform: translateY(-20%);
+        }
+
+        /* Move signin to right */
+
+        .container_candidate.right-panel-active .sign-in-container_candidate {
+            transform: translateY(100%);
+        }
+
+        /* Move overlay to left */
+
+        .container_candidate.right-panel-active .overlay-container_candidate {
+            transform: translateX(-100%);
+        }
+
+        /* Bring signup over signin */
+
+        .container_candidate.right-panel-active .sign-up-container_candidate {
+            transform: translateX(100%);
+            opacity: 1;
+            z-index: 5;
+        }
+
+        /* Move overlay back to right */
+
+        .container_candidate.right-panel-active .overlay {
+            transform: translateX(50%);
+        }
+
+        /* Bring back the text to center */
+
+        .container_candidate.right-panel-active .overlay-left {
+            transform: translateY(0);
+        }
+
+        /* Same effect for right */
+
+        .container_candidate.right-panel-active .overlay-right {
+            transform: translateY(20%);
+        }
+
+        .icons {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            letter-spacing: 15px;
+            align-items: center;
+        }
+
+        .container_candidate.activate-login .sign-in-container_candidate {
+            display: none;
+        }
+
+        .container_candidate.activate-login .overlay-container_candidate {
+            transform: translateX(-100%);
+        }
+
+        .container_candidate.activate-login .sign-up-container_candidate {
+            transform: translateX(100%);
+            opacity: 1;
+            z-index: 5;
+        }
+
+        .container_candidate.activate-login .overlay {
+            transform: translateX(50%);
+        }
+
+        .container_candidate.activate-login .overlay-left {
+            transform: translateY(0);
+        }
+
+        .container_candidate.activate-login .overlay-right {
+            display: none;
+        }
+
+        #cor {
+            width: 100%;
+            height: auto;
+            background: white;
+            /* fallback for old browsers */
+        }
+
+        .resp-big {
+            display: none;
+        }
+
+        @media only screen and (min-width:1000px) {
+            .resp-big {
+                display: block;
+            }
+
+            .resp {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .resp {
+                /* background-color: lightblue; */
+                display: block;
+                /* background: linear-gradient(260.75deg, #FDCA40 21.05%, #F79824 71.13%); */
+            }
+
+            .resp-big {
+                display: none;
+            }
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F3F7FF;
+        }
+
+        /* .tettt{
+          transform: translateY(0);
+          transition: transform .6s ease-in-out;
+          -webkit-transition: opacity 600ms, visibility 600ms;
+            transition: opacity 600ms, visibility 600ms;
+        } */
+
+        .box {
+            width: 100%;
+        }
+
+        .page-heading {
+            font-family: 'Roboto', sans-serif;
+            color: #1D2F6F;
+            font-weight: 600;
+            margin-top: 3%;
+            margin-left: 5%;
+        }
+
+        .one {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .referral-id {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .one-1 {
+            width: 65%;
+        }
+
+        .one-2 {
+            width: 35%;
+            display: flex;
+        }
+
+        .list {
+            font-family: 'Roboto', sans-serif;
+            list-style-image: url('bullets.png');
+            margin-left: 6%;
+            height: 100%;
+            font-size: 24px;
+            color: #1D2F6F;
+        }
+
+        .list-li {
+            margin-top: 1em;
+        }
+
+        .two {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .two-1 {
+            width: 50%;
+            /* display:flex;
+         flex-direction:row; */
+            justify-content: center;
+        }
+
+        .two-2 {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .create-account {
+            margin-top: 3%;
+            color: #1D2F6F;
+            display: flex;
+            justify-content: center;
+        }
+
+        #card-signup {
+            font-family: 'Roboto', sans-serif;
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        .fbg {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        .signup2,
+        .signup2-2 {
+            width: 90%;
+        }
+
+        #card-signin {
+            font-family: 'Roboto', sans-serif;
+            background-color: #415fc9;
+            color: white;
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        .career-journey {
+            font-family: 'Roboto', sans-serif;
+            color: #1D2F6F;
+            font-size: 1.5rem;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+        .card-buttons {
+            margin-top: 2%;
+            margin-bottom: 3%;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        .btn {
+            font-family: 'Roboto', sans-serif;
+            border-radius: 25px;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        .signup-button {
+            background-color: #1D2F6F;
+        }
+
+        .signin-button,
+        .signin-button-tab {
+            background-color: #1D2F6F;
+            color: white;
+        }
+
+        .signin-button-tab {
+            display: none;
+        }
+
+        .signin-button-web {
+            margin-bottom: 5%;
+            background-color: white;
+            color: #1D2F6F;
+        }
+
+        .signin-button-web:visited {
+            background-color: white;
+            color: #1D2F6F;
+        }
+
+        @media only screen and (min-device-width: 1025px) {
+            .career-journey {
+                display: none;
+            }
+
+            .signin-button,
+            .signin-button-tab {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-device-width: 1024px) {
+            .box {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .one {
+                width: 50%;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .page-heading {
+                margin-top: 30px;
+                white-space: nowrap;
+            }
+
+            .two {
+                width: 50%;
+                display: flex;
+                align-self: center;
+            }
+
+            .two-1 {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .two-2 {
+                display: none;
+            }
+
+            .one-1 {
+                width: 100%;
+            }
+
+            .img-fluid1 {
+                width: 70%;
+                margin-left: 7%;
+            }
+
+            .list {
+                font-size: 100%;
+            }
+
+            .list-li {
+                margin-top: .8em;
+            }
+
+            .one-2 {
+                width: 100%;
+            }
+
+            .card-buttons {
+                /* display: inline;
+        margin: auto;
+        margin-bottom: 3%; */
+            }
+
+            .signup-button,
+            .signup-button-tab {
+                background-color: white;
+                color: #1D2F6F;
+            }
+
+            .signin-button,
+            .signin-button-tab {
+                /* width: 22.4%; */
+                padding-left: 2.8%;
+                padding-right: 2.8%;
+                margin-bottom: 5%;
+            }
+
+            .signup2,
+            .signup2-2 {
+                width: 40%;
+            }
+
+            .signup2-2 {
+                /* margin-left: 37%; */
+            }
+
+            #card-signup {
+                width: 85%;
+            }
+
+            .create-account {
+                margin: 1%;
+            }
+
+            .career-journey {
+                font-size: 120%;
+                width: 80%;
+            }
+        }
+
+        @media only screen and (max-device-width: 768px) {
+            #eye {
+                margin-left: -7% !important;
+                margin-top: 0 !important;
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .page-heading {
+                font-size: 180%;
+            }
+
+            .one {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+
+            .one-1 {
+                width: 100%;
+            }
+
+            .one-2 {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .img-fluid1 {
+                width: 50%;
+            }
+
+            .two {
+                width: 100%;
+            }
+
+            .list {
+                font-size: 140%;
+            }
+
+            .signin-button,
+            .signin-button-tab {
+                width: 113px;
+            }
+
+            .signup2,
+            .signup2-2 {
+                width: 30%;
+            }
+        }
+
+        @media only screen and (max-device-width: 570px) {
+
+            .signin-button,
+            .signin-button-tab {
+                width: 100px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        @media only screen and (max-device-width: 540px) {
+            .list {
+                font-size: 110%;
+            }
+        }
+
+        @media only screen and (max-device-width: 375px) {
+            .signup2 {
+                margin-top: 3%;
+            }
+
+            .signup2,
+            .signup2-2 {
+                width: 35%;
+            }
+        }
+
+        @media only screen and (max-device-width: 320px) {
+            .signup2 {
+                margin-top: 3%;
+            }
+        }
+
+        @media only screen and (max-device-width: 280px) {
+            .signup2 {
+                margin-top: 6%;
+            }
+        }
+
+        .footer_list1 {
+            margin-right: 60px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .footer_list2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .footer_p1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
+        .footer_li1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .footer_li2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+        .footer_li3 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        .page-footer {
+            margin-top: 0rem;
+        }
+
+        .page-footer1 {
+            display: none;
+        }
+
+        .footer_underline:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) and (max-width: 1872px) {
+            .copyright_text1 {
+                margin-top: -5px !important;
+            }
+
+            .page-footer1 {
+                display: none;
+            }
+
+            .footer_img1 {
+                margin-left: 6rem;
+            }
+
+            .footer_icon {
+                margin-left: 6rem;
+            }
+
+            .footer_copyright {
+                margin-left: 6rem;
+            }
+
+            .footer_li1 {
+                font-size: 18px;
+            }
+
+            .footer_li2 {
+                font-size: 18px;
+            }
+
+            .footer_li3 {
+                font-size: 18px;
+            }
+
+            .footer_icons {
+                padding-right: 8px;
+            }
+        }
+
+        @media (min-device-width:1024px) and (max-device-width:1199px) {
+            .footer_img1 {
+                margin-left: 3rem !important;
+            }
+
+            .footer_icon {
+                margin-left: 3rem !important;
+            }
+
+            .footer_copyright {
+                margin-left: 3rem !important;
+            }
+        }
+
+        @media only screen and (max-device-width: 992px) {
+            .footer_img1 {
+                width: 165.63px;
+                height: 49.42px;
+                margin-left: -1rem;
+            }
+
+            .footer_icon {
+                margin-left: -1rem;
+            }
+
+            .footer_icons {
+                height: 2.5rem !important;
+                padding-right: 8px;
+            }
+
+            .footer_copyright {
+                margin-left: -1rem;
+            }
+
+            .copyright_text {
+                font-size: 13px !important;
+                font-weight: 400;
+            }
+
+            .copyright_text1 {
+                font-size: 13px !important;
+                font-weight: 400;
+            }
+
+            .footer_li3 {
+                margin-left: 20px;
+            }
+
+            .footer_li2 {
+                margin-left: 20px;
+            }
+
+            .footer_li1 {
+                margin-left: 15px;
+            }
+        }
+
+        @media only screen and (max-device-width: 760px) {
+            .page-footer {
+                display: none;
+            }
+
+            .page-footer1 {
+                display: block;
+            }
+        }
+
+        #toggle_pwd,
+        #toggle_pwd1 {
+            cursor: pointer;
+            color: #1d2f6f;
+            font-size: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: -7% !important;
+            /* margin-top: 6% !important; */
+        }
+
+
+
+        .pull-right {
+            float: right !important;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+
+        .signup-button {
+            color: #ffffff;
+            outline: none !important;
+        }
+
+        .signup-button:focus,
+        .signup-button:active,
+        .signup-button:hover {
+            background-color: #1D2F6F;
+            color: #ffffff;
+            outline: none !important;
+        }
+
+        @media (max-width: 1025px) {
+            .signup-button {
+                color: #1D2F6F;
+                box-shadow: 4px 5px 8px 2px rgba(0, 0, 0, 0.1);
+                outline: none !important;
+            }
+
+            .signup-button:focus,
+            .signup-button:active,
+            .signup-button:hover {
+                background-color: #ffffff;
+                color: #1D2F6F;
+                outline: none !important;
+            }
+
+            .signin-button:focus,
+            .signin-button:active,
+            .signin-button:hover {
+                background-color: #1D2F6F;
+                color: #ffffff;
+                outline: none !important;
+            }
+        }
+
+        #card-signin1 {
+            font-family: 'Roboto', sans-serif;
+            background-color: #415fc9;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 80%;
+            margin: 2% auto;
+        }
+
+        #card-signup1,
+        #card-hide {
+            font-family: 'Roboto', sans-serif;
+            width: 80%;
+            margin: 2% auto;
+            /* padding-top: 10%;
+       padding-bottom: 10%; */
+            /* height: 300px; */
+        }
+
+        /* .forgot_password{
+       color:#333333;
+       font-family:'Montserrat', sans-serif;
+     } */
+
+        @media screen and (max-width:1024px) {
+            .web-view {
+                display: none;
+            }
+
+            .tab-mobile-view {
+                display: block !important;
+            }
+
+            .form-row1 {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+
+            .form-control {
+                margin-top: 10px;
+                background-color: #e1e1e1;
+            }
+
+            input {
+                background-color: #e1e1e1 !important;
+                outline: none !important;
+            }
+
+            #eye1 {
+                display: flex;
+                flex-direction: row;
+            }
+
+            option {
+                width: 30px;
+            }
+        }
+
+        .form-control {
+            height: -moz-calc(100%);
+            height: -webkit-calc(100%);
+            height: calc(100%);
+        }
+
+        @media screen and (max-width:320px) {
+
+            .signin-button,
+            .signin-button-tab {
+                width: 90px;
+            }
+        }
+
+        @media screen and (max-width:460px) {
+
+            #toggle_pwd,
+            #toggle_pwd1 {
+                margin-left: -25px !important;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/6a38d8939c.js" crossorigin="anonymous"></script>
+    <script>
+        function function3() {
+            document.getElementById("card-signup").style.display = "none";
+            document.getElementById("card-hide").style.display = "block";
+            document.getElementById("tab-signin").style.display = "none";
+            document.getElementById("tab-signup").style.display = "inline-block";
+            document.getElementById("journey-hide").style.display = "none";
+
+        }
+
+        function function4() {
+            document.getElementById("card-signup").style.display = "block";
+            document.getElementById("card-hide").style.display = "none";
+            document.getElementById("tab-signin").style.display = "inline-block";
+            document.getElementById("tab-signup").style.display = "none";
+            document.getElementById("journey-hide").style.display = "block";
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <script type="text/javascript">
+        $(function () {
+            $("#toggle_pwd").click(function () {
+                $(this).toggleClass("fa-eye fa-eye-slash");
+                var type = $(this).hasClass("fa-eye-slash") ? "password" : "text";
+                $("#txtPassword").attr("type", type);
+            });
+            $("#toggle_pwd1").click(function () {
+                $(this).toggleClass("fa-eye fa-eye-slash");
+                var type = $(this).hasClass("fa-eye-slash") ? "password" : "text";
+                $("#txtPassword1").attr("type", type);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+
+    <div class="web-view" style="margin-top:3rem;">
+
+        <h1 class="page-heading">Candidate</h1>
+
+        <div class="one">
+            <div class="one-1">
+                <ul class="list">
+                    <li class="list-li">Develop required Skills for your Career through <b>1:1 Mentoring/Mock
+                            Interviews.</b></li>
+                    <li class="list-li">Go through the exclusive Career research program designed and garnered by
+                        TalentServe's team.</li>
+                    <li class="list-li">Be Resume/Portfolio ready.</li>
+                    <li class="list-li">Career counselling sessions from industry stalwarts.</li>
+                </ul>
+            </div>
+            <div class="one-2">
+                <img class="img-fluid1" src="{%static 'ts_images/signuppages/candidate.png' %}" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="container_candidate-fluid">
+            <div class="container_candidate resp-big" id="container_candidate">
+                <div class="form-container_candidate sign-up-container_candidate" style="">
+                    <form method="POST" id="form1" name="form1" action="/candidate_login" style="">
+
+                        <h1 style=" font-family: 'Roboto', sans-serif; color:#1D2F6F;">Sign in</h1>
+                        <input type="text" class="text-input" name="username" placeholder="Candidate ID" required />
+                        <div class="password-input">
+                            <input type="password" id="signin-password" name="password" placeholder="Password"
+                                required /><i class="fas fa-eye-slash field-icon toggle-password"
+                                style="color:#1D2F6F; " id="signin-icon"></i>
+                        </div>
+
+                        <a href="#" style=" margin-left:auto;">Forgot your password?</a>
+                        <button form="form1" style="background-color:#1D2F6F;">Sign In</button>
+                    </form>
+                </div>
+                <div class="form-container_candidate sign-in-container_candidate">
+                    <form action="/saarathii" method="POST" name="form2" id="form2">
+
+
+                        <h2 style="color:#1d2F6F;  font-family: 'Roboto', sans-serif; margin-top:10px;">Create Account
+                        </h2>
+                        <input type="text" class="text-input" name="full_name" placeholder=" Full Name" required />
+                        <input type="number" class="text-input" name="mobile_no" placeholder=" Mobile Number"
+                            required />
+                        <input type="email" class="text-input" name="email" placeholder="Email" required />
+                        <div class="password-input">
+                            <input type="password" id="signup-password" name="password" placeholder="Password"
+                                required /><i class="fas fa-eye-slash field-icon toggle-password" style="color:#1D2F6F;"
+                                id="signup-icon"></i>
+                        </div>
+                        <div class="input-group" style="margin: 6px 0;">
+                            <div class="input-group-prepend">
+                                <select class="input-group-text"
+                                    style="background: #eee;border-right: 1px; padding: 14px 15px;" id="basic-addon1"
+                                    name="ctype">
+                                    <option value="Intern">I</option>
+                                    <option value="Employee">E</option>
+
+                                </select>
+                            </div>
+                            &nbsp;&nbsp;
+                            <input type="number" id="form2refid" name="ref_id" class="form-control"
+                                style="background: #eee;padding: 12px 15px;" placeholder="Referral ID" aria-label=""
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <!--<input type="number" class="text-input" name="ref_id" placeholder=" Referral ID" />-->
+                        <button type="submit" form="form2" style="margin-top:2%;background-color:#1D2F6F;"
+                            id="form2SignUp">Sign Up</button>
+
+                        <div class="card-buttons" style="width:30%;margin-bottom:20px;;">
+                            <a href="#" style=" margin-right:50%;" class="fbg"><img class="signup2"
+                                    src="{%static 'ts_images/signuppages/google.png' %}" /></a>
+                            <a href="#" style="" class="fbg"><img class="signup2-2"
+                                    src="{%static 'ts_images/signuppages/fb.png' %}" /></a>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="overlay-container_candidate">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left" style="background:#FCCF57;">
+                            <h1 style="  font-family: 'Roboto', sans-serif;">Hello Candidate!</h1>
+                            <p style="  font-family: 'Roboto', sans-serif;">Enter your personal details and start
+                                journey with us</p>
+                            <button class="ghost" id="signIn" style="background-color:#FFFFFF;color:#1D2F6F;">Sign
+                                Up</button>
+                        </div>
+                        <div class="overlay-panel overlay-right" style="background: #415FC9;">
+                            <h1 style="  font-family: 'Roboto', sans-serif;">Welcome Back!</h1>
+                            <p style="  font-family: 'Roboto', sans-serif;">To keep connected with us please login with
+                                your personal info</p>
+                            <button class="ghost" id="signUp" style="background-color:#FFFFFF;color:#1D2F6F;">Sign
+                                In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_candidate resp" id="container_candidate1">
+                <div class="row">
+                    <div class="col-12" id="signincol">
+                        <div class="form-container_candidate">
+                            <form method="POST" id="form3" name="form3" action="/candidate_login"
+                                style="margin:5%;padding-top:5%">
+
+                                <h1 style="color:#1D2F6F; font-family: 'Roboto', sans-serif;">Sign in</h1>
+                                <input type="text" class="text-input" name="username" placeholder="Candidate ID"
+                                    required />
+                                <div class="col-12 password-input">
+                                    <input type="password" id="signin-password1" name="password" placeholder="Password"
+                                        required /><i class="far fa-eye field-icon toggle-password"
+                                        id="signin-icon1"></i>
+                                </div>
+                                <a href="#">Forgot your password?</a>
+                                <button form="form3">Sign In</button>
+                            </form>
+                            <br />
+                        </div>
+                    </div>
+                    <h1 style="text-align: center;position: relative;z-index: 2;">OR</h1>
+                    <div class="col-12" id="signupcol">
+                        <div class="form-container_candidate ">
+                            <br />
+                            <form action="/saarathii" method="POST" name="form4" id="form4">
+
+
+                                <h2>Create Account</h2>
+                                <input type="text" class="text-input" name="full_name" placeholder=" Full Name"
+                                    required />
+                                <input type="text" class="text-input" name="mobile_no" placeholder=" Mobile Number"
+                                    required />
+                                <input type="email" class="text-input" name="email" placeholder="Email" required />
+                                <div class="col-12 password-input">
+                                    <input type="password" id="signup-password1" name="password" placeholder="Password"
+                                        required /><i class="far fa-eye field-icon toggle-password"
+                                        id="signup-icon1"></i>
+                                </div>
+                                <div class="input-group" style="margin: 6px 0;">
+                                    <div class="input-group-prepend">
+                                        <select class="input-group-text"
+                                            style="background: #eee;border-right: 1px; padding: 12px 15px;"
+                                            id="basic-addon2" name="ctype">
+                                            <option value="Intern">I</option>
+                                            <option value="Employee">E</option>
+
+                                        </select>
+                                    </div>
+                                    <input type="number" id="form4refid" name="ref_id" class="form-control"
+                                        style="background: #eee;padding: 12px 15px; height:100% !important;"
+                                        placeholder="Referral ID " aria-label="" aria-describedby="basic-addon2">
+                                </div>
+
+                                <button form="form4" id="form4SignUp">Sign Up</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-mobile-view" style="display:none;">
+        <h1 class="page-heading">Candidate</h1>
+        <div class="box">
+            <div class="one">
+                <div class="one-1">
+                    <ul class="list">
+                        <li class="list-li">Develop required Skills for your Career through <b>1:1 Mentoring/Mock
+                                Interviews.</b></li>
+                        <li class="list-li">Go through the exclusive Career research program designed and garnered by
+                            TalentServe's team.</li>
+                        <li class="list-li">Be Resume/Portfolio ready.</li>
+                        <li class="list-li">Career counselling sessions from industry stalwarts.</li>
+                    </ul>
+                </div>
+                <div class="one-2">
+                    <img class="img-fluid1" src="{%static 'ts_images/signuppages/candidate.png' %}" alt="">
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="two-1">
+                    <!-- <div class="two-1-1" > -->
+                    <div class="card" id="card-signup" style=" ">
+                        <h2 class="create-account">Create Account</h2>
+                        <form>
+                            <div class="form-row1">
+                                <input type="text" class="form-control" placeholder="Full name">
+                                <input type="text" class="form-control" placeholder="Mobile Number">
+                                <input type="text" class="form-control" placeholder="Email">
+
+                                <div id="eye1" style=" ">
+                                    <input type="password" id="txtPassword" class="form-control" placeholder="Password">
+                                    <span id="toggle_pwd" class="fas fa-fw field_icon fa-eye-slash mx-auto"></span>
+                                </div>
+
+                                <div class="referral-id" style=" ">
+                                    <select style="background-color: #eee;  margin-top:10px; margin-right: 5px;">
+                                        <option value="Intern" style="padding:0px;color:#1d2f6f;">I</option>
+                                        <option value="Employee" style="padding:0px;color:#1d2f6f;">E</option>
+                                    </select>
+                                    <input type="text" class="form-control" style=" " placeholder="Referral ID">
+                                </div>
+
+                                <center>
+                                    <div class="btn  signup-button" style="margin-top:3%;" role="button">SIGN UP</div>
+                                </center>
+                        </form>
+                        <div class="card-buttons ">
+                            <a href="#" class="fbg"><img class="signup2"
+                                    style="float:right;display:flex; align-items: flex-end;"
+                                    src="{%static 'ts_images/signuppages/google.png' %}" /></a>
+                            <a href="#" class="fbg"><img class="signup2-2"
+                                    src="{%static 'ts_images/signuppages/fb.png' %}" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="card-hide" style="border-style: solid; display:none;">
+                    <h2 class="create-account" style="color: #1D2F6F; padding-top:70px;" ;>Sign In</h2>
+                    <form>
+                        <div class="form-row1">
+                            <input type="text" class="form-control" placeholder="Candidate ID">
+                            <!-- <input type="text" class="form-control" placeholder="Password"> -->
+
+                            <div id="eye1" style=" ">
+                                <input type="password" id="txtPassword1" class="form-control" placeholder="Password">
+                                <span id="toggle_pwd1" class="fas fa-fw field_icon fa-eye-slash mx-auto"></span>
+                            </div>
+                            <a href="#" style="display:flex; justify-content:flex-end;">Forgot your password?</a>
+                        </div>
+
+                        <center>
+                            <div class="btn  signup-button" style="margin-top:3%; margin-bottom:3%;margin-bottom:70px;"
+                                role="button">SIGN IN</div>
+                        </center>
+                    </form>
+                </div>
+
+                <center>
+                    <div class="btn  signin-button" id="tab-signin" style="margin-top:3%;" role="button"
+                        onclick="function3()">SIGN IN</div>
+                    <div class="btn  signin-button-tab" id="tab-signup" style="margin-top:3%;" role="button"
+                        onclick="function4()">SIGN UP</div>
+                </center>
+                <h3 class="career-journey" id="journey-hide" style="  margin: 0 auto;">Enter your personal details and
+                    start your Career journey with us</h3>
+
+
+            </div>
+
+
+
+            <!-- <div class="two-2">
+
+        </div> -->
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <div>
+
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+<script>
+    const signUpPasswordIcon = document.getElementById('signup-icon');
+    const signinPasswordIcon = document.getElementById('signin-icon');
+    const signupPasswordInput = document.getElementById('signup-password');
+    const signinPasswordInput = document.getElementById('signin-password');
+    signUpPasswordIcon.addEventListener('click', () => {
+        if (signUpPasswordIcon.classList.contains('fa-eye')) {
+            signUpPasswordIcon.classList.remove('fa-eye');
+            signUpPasswordIcon.classList.add('fa-eye-slash');
+            signupPasswordInput.setAttribute('type', 'password');
+        } else {
+            signUpPasswordIcon.classList.remove('fa-eye-slash');
+            signUpPasswordIcon.classList.add('fa-eye');
+            // make input type password
+            signupPasswordInput.setAttribute('type', 'text');
+        }
+    });
+    signinPasswordIcon.addEventListener('click', () => {
+        if (signinPasswordIcon.classList.contains('fa-eye')) {
+            signinPasswordIcon.classList.remove('fa-eye');
+            signinPasswordIcon.classList.add('fa-eye-slash');
+            signinPasswordInput.setAttribute('type', 'password');
+        } else {
+            signinPasswordIcon.classList.remove('fa-eye-slash');
+            signinPasswordIcon.classList.add('fa-eye');
+            signinPasswordInput.setAttribute('type', 'text');
+        }
+    });
+
+    const signUpPasswordIcon1 = document.getElementById('signup-icon1');
+    const signinPasswordIcon1 = document.getElementById('signin-icon1');
+    const signupPasswordInput1 = document.getElementById('signup-password1');
+    const signinPasswordInput1 = document.getElementById('signin-password1');
+    signUpPasswordIcon1.addEventListener('click', () => {
+        if (signUpPasswordIcon1.classList.contains('fa-eye')) {
+            signUpPasswordIcon1.classList.remove('fa-eye');
+            signUpPasswordIcon1.classList.add('fa-eye-slash');
+            signupPasswordInput1.setAttribute('type', 'password');
+        } else {
+            signUpPasswordIcon1.classList.remove('fa-eye-slash');
+            signUpPasswordIcon1.classList.add('fa-eye');
+            // make input type password
+            signupPasswordInput1.setAttribute('type', 'text');
+        }
+    });
+    signinPasswordIcon1.addEventListener('click', () => {
+        if (signinPasswordIcon1.classList.contains('fa-eye')) {
+            signinPasswordIcon1.classList.remove('fa-eye');
+            signinPasswordIcon1.classList.add('fa-eye-slash');
+            signinPasswordInput1.setAttribute('type', 'password');
+        } else {
+            signinPasswordIcon1.classList.remove('fa-eye-slash');
+            signinPasswordIcon1.classList.add('fa-eye');
+            signinPasswordInput1.setAttribute('type', 'text');
+        }
+    });
+
+
+
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container_candidate = document.getElementById('container_candidate');
+
+    signUpButton.addEventListener('click', () =>
+        container_candidate.classList.add('right-panel-active'));
+
+    signInButton.addEventListener('click', () =>
+        container_candidate.classList.remove('right-panel-active'));
+
+
+
+    $(document).ready(function () {
+
+
+
+    });
+</script>
+
+</html>

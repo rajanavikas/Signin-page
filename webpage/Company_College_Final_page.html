@@ -1,0 +1,1359 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentServe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MMM9T5GG60"></script>
+    <!-- <script>
+          window.dataLayer = window.dataLayer || [];
+
+          function gtag() {
+              dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+
+          gtag('config', 'G-MMM9T5GG60');
+      </script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="se40wAB5qxRGKyvV9sRTQncsVRA9q6Rck1phXs4VruI" />
+    <title>TalentServe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+        nav {
+                box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05);
+                /* box-shadow: 0 7px 2px rgba(0,0,0,0.1); */
+                font-family: 'Poppins', sans-serif;
+                color: #1d2f6f;
+                font-size: 18px;
+                line-height: 33px;
+            }
+    
+            .nbar {
+                margin: 0px 2%;
+            }
+    
+            .navl {
+                display: inline-block;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 10px;
+    
+            }
+    
+            .navr {
+                display: inline-block;
+                float: right;
+                margin-top: 15px;
+                margin-bottom: 15px;
+    
+            }
+    
+            .nav-tick {
+                display: inline-block;
+                margin-right: 10px;
+                width: 25%;
+            }
+    
+            .nav-tick img {
+                width: 100%;
+            }
+    
+            .nav-men {
+                display: inline-block;
+                margin-left: 10px;
+            }
+    
+            .nav-men img {
+                width: 70%;
+            }
+    
+            .nav-men img:focus {
+                outline: none;
+            }
+    
+            .nav-bell {
+                margin-left: 10px;
+                display: inline-block;
+            }
+    
+            .nav-bell img {
+                width: 70%;
+            }
+    
+            .nav-logout {
+                margin-top:8px;
+                margin-left: 10px;
+                display: inline-block;
+            }
+    
+            .nav-logout img {
+                width: 70%;
+                margin-top: 0px;
+            }
+    
+            .dropdown-toggle::after {
+                content: none;
+            }
+    
+            .dropdown-toggle:focus {
+                outline: none !important;
+            }
+    /*
+            .dropdown-menu {
+                color: #1d2f6f;
+                margin-top: 38px;
+            } */
+    
+            .men {
+                width: 300px;
+                border-radius: 15px;
+            }
+    
+            .dropdown-item {
+                margin-top: 5px;
+            }
+    
+            .dropdown-submenu {
+                position: relative;
+            }
+    /*
+            .dropdown-submenu>.dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -6px;
+                margin-left: -1px;
+                -webkit-border-radius: 0 6px 6px 6px;
+                -moz-border-radius: 0 6px 6px;
+                border-radius: 0 6px 6px 6px;
+            }
+    
+            .dropdown-submenu:hover>.dropdown-menu {
+                display: block;
+            }
+    
+            .dropdown-menu:hover {
+                display: block;
+            } */
+    
+            .dropdown-submenu>a:after {
+                display: block;
+                content: " ";
+                float: right;
+                width: 0;
+                height: 0;
+                border-color: transparent;
+                border-style: solid;
+                border-width: 0px 0 0px 0px;
+                border-left-color: #ccc;
+                margin-top: 5px;
+                margin-right: -10px;
+            }
+    
+            .dropdown-submenu:hover>a:after {
+                border-left-color: #fff;
+            }
+    
+            /* .dropdown-submenu.pull-left {
+                float: none;
+            }
+    
+            .dropdown-submenu.pull-left>.dropdown-menu {
+                left: -100%;
+                margin-left: 10px;
+                -webkit-border-radius: 6px 0 6px 6px;
+                -moz-border-radius: 6px 0 6px 6px;
+                border-radius: 6px 0 6px 6px;
+            } */
+    
+            a {
+                text-decoration: none;
+                color: #1d2f6f;
+            }
+    
+            a:link,
+            a:hover {
+                text-decoration: none;
+                color: #1d2f6f;
+            }
+    
+            .men li {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                font-weight: 500;
+            }
+    
+            .hello_tar {
+                background-color: #fff;
+                padding: 6px;
+                border-radius: 14px;
+                padding-left: 10px;
+                box-shadow:1px 3px 4px 3px rgba(0,0,0,0.15);
+            }
+    
+            .buy {
+                background-image: linear-gradient(to right, #6AA5FE, #D1E4FF);
+                border-radius: 25px;
+                margin-left: 30px;
+                padding: 10px;
+                font-weight: 700;
+                color: #fff;
+            }
+    
+            .buy:hover,
+            .buy:link {
+                text-decoration: none;
+                color: #1d2f6f;
+            }
+    
+            .dropdown-menu li {
+                font-weight: 500;
+            }
+    
+            .msgs {
+                font-size: 18px;
+                color: #1d2f6f;
+                font-weight: 500;
+            }
+    
+            .msgs:link,
+            .msgs:hover {
+                text-decoration: none;
+                color: #1d2f6f;
+                /* background-color: #F3F7FF; */
+            }
+            /* @media(max-width:625px){
+          .men{
+              width: 150px;
+          } */
+    
+    
+            .nav-logout {
+                margin-right: 20px;
+                display: inline-block;
+            }
+    
+            .nav-logout img {
+                width: 40px;
+                height: 40px;
+            }
+    
+            .dropdown-toggle::after {
+                content: none;
+            }
+    
+            .dropdown-toggle:focus {
+                outline: none !important;
+            }
+    
+    
+            .dropdown-item {
+                margin-top: 5px;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #1d2f6f;
+            }
+    
+            a:link,
+            a:hover {
+                text-decoration: none;
+                color: #1d2f6f;
+            }
+            .buy {
+                background-image: linear-gradient(to right, #6AA5FE, #D1E4FF);
+                border-radius: 25px;
+                margin-left: 10px;
+                padding: 10px;
+                font-weight: 700;
+                color: #fff;
+            }
+    
+            .buy:hover,
+            .buy:link {
+                text-decoration: none;
+                color: #1d2f6f;
+            }
+    
+            .dropdown-menu li {
+                font-weight: 500;
+            }
+    
+            .msgs {
+                font-size: 18px;
+                color: #1d2f6f;
+                font-weight: 500;
+            }
+    
+            .msgs:link,
+            .msgs:hover {
+                text-decoration: none;
+                color: #1d2f6f;
+                /* background-color: #F3F7FF; */
+            }
+    
+            .dropdown-submenu {
+                position: relative;
+            }
+    
+            .dropdown-submenu .dropdown-menu {
+                top: 0;
+                left: 100%;
+                margin-top: -1px;
+            }
+    
+             .sub_drop {
+                margin-left: 3px;
+                border-radius: 10px;
+                font-size: 13px;
+            }
+    
+            @media screen and (min-width:1025px) {
+                .men {
+                    width: 300px;
+                    margin-top: 38px;
+                }
+                .bellu {
+                    width: auto;
+                }
+                .nav-logout img {
+    
+                margin-top: 10px;
+            }
+            }
+            @media screen and (max-width:1240px){
+                .nav-link{
+                    padding-right:0px !important;
+                    padding-left:8px !important;
+                    font-size:12px !important;
+                }
+                #mySidenav{
+                    margin-left:-110px !important;
+                    width:25% !important;
+                }
+                .hello_tar > span{
+                    font-size:14px !important;
+    
+                 }
+            }
+            @media screen and (max-width:652px){
+                .nav-link{
+                    font-size:11px !important;
+                }
+                .hello_tar > span{
+                    font-size:13px !important;
+    
+                 }
+            }
+            @media screen and (max-width:576px){
+                 .nav-bell img{
+                   width:30px;
+                }
+               .nav-tick img {
+                width: 50px;
+            }
+            .nav-men{
+                margin-left:-15px;
+            }
+            .nav-bell{
+                margin-left:-10px;
+            }
+    
+            .nav-men img {
+                width:30px ;
+            }
+            .nav-logout img {
+                width: 35px;
+                height:35px;
+            }
+            .navl{
+                width:75%;
+            }
+            .navr{
+                width:18%;
+            }
+    
+            }
+    
+    
+    
+            @media screen and (min-width:470px) and (max-width:576px)
+    {
+        .nav-men{
+                margin-left:-45px;
+            }
+            #mySidenav{
+                margin-left:-82px !important;
+            }
+    }
+    
+             @media screen and (min-width:420px) and (max-width:470px){
+               #mySidenav{
+                   margin-left:-100px !important;
+               }
+             }
+    
+             @media screen and (min-width:370px) and (max-width:420px){
+               #mySidenav{
+                   margin-left:-90px !important;
+               }
+             }
+    
+             @media screen and (min-width:320px) and (max-width:370px){
+               #mySidenav{
+                   margin-left:-80px !important;
+               }
+             }
+    
+             @media screen and (min-width:281px) and (max-width:320px){
+               #mySidenav{
+                   margin-left:-70px !important;
+               }
+             }
+             @media screen and (max-width:280px){
+               #mySidenav{
+                   margin-left:-65px !important;
+               }
+             }
+    
+        body {
+                font-family: 'Poppins', sans-serif;
+            }
+    a:focus {outline : none;}
+
+    /* ------------------------------------------------------------------------------------------------------------------------------------------- */
+.Company_Main_Body{
+	box-sizing:border-box;
+    background-color:#f3f7ff;
+	color:#1D2F6F;
+	text-rendering:optimizeLegibility;
+	font-size:16px;
+	font-family: 'Poppins', sans-serif;
+}
+.Company_Whole_card{
+        width:85%;
+        height:480px;
+        background-color:#FFFFFF;
+        border-style: solid;
+        border-color: #1D2F6F;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:3%;
+    }
+    .Company_First_card{
+        width:33%;
+        height:175px;
+        background-color:#FFFFFF;
+        margin-left:6%;
+        margin-top:4%;
+        margin-bottom: 2%;
+    }
+    .Company_First_card p{
+        font-size:25px;
+        font-weight:600;
+        text-align: center;
+        margin-top:70px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .Company_Para{
+        width:31%;
+        margin-top:4%;
+        margin-bottom: 2%;
+        margin-left:4%;
+    }
+    .Company_Para p{
+        margin-top:10%;
+        font-size:25px;
+        font-weight: 700;
+    }
+    .Company_Para2{
+        font-size:22px;
+        font-weight: 700;
+        margin-top:3%;
+        margin-left:6%;
+        width:72%;
+    }
+    .Company_Second_card{
+        width:60%;
+        height:430px;
+        background-color:#FFFFFF;
+        /* border-color: #1D2F6F; */
+        margin-left:-2px;
+        margin-top:8%;
+        margin-bottom: 10%;
+        /* border-style: solid; */
+    }
+    .Company_Second_card p{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .Company_para3{
+        margin-top:5%;
+       margin-left:10%;
+       margin-bottom:7.5%;
+    }
+    .Company_Third_card{
+        width:40%;
+        height:430px;
+        background-color:#FFFFFF;
+        border-style: solid;
+        border-color: #1D2F6F;
+        margin-left:2%;
+        margin-right:-4px;
+        margin-top:8%;
+        margin-bottom: 10%;
+    }
+    .Company_para4{
+        width:60%;
+        margin-left:7%;
+        margin-top:6%;
+    }
+    .Company_para4 p{
+        font-size:25px;
+        font-weight:600;
+        line-height: 50px; 
+    }
+    .Company_para5{
+        width:75%;
+        margin-left:8%;
+        margin-top:14%;
+    }
+    .Company_para5 p{
+        font-size:25px;
+        font-weight:600;
+        line-height: 40px;
+    }
+    .Company_row1{
+            display:flex;
+            flex-direction:row;
+        }
+        .Company_row2{
+            display:flex;
+            flex-direction:row;
+        }
+    @media screen and (max-width:1025px){
+        .Company_Whole_card{
+            width:85% !important;
+            height:470px !important;
+            margin-left:6% !important;
+            border-radius:5px;
+        }
+        .Company_First_card{
+            width:44% !important;
+        }
+        .Company_Para{
+            margin-left:17% !important;
+        }
+        .Company_para4{
+            width:65% !important;
+        }
+        .Company_para5{
+            width:95% !important;
+        }
+        .Company_row1{
+            display:flex !important;
+            flex-direction:column !important;
+        }
+        .Company_Para{
+            margin-top:-2% !important;
+             margin-bottom: 0% !important;
+             margin-left:17%; 
+        }
+        .Company_Para2{
+            font-size:18px;
+            margin-top:4%;
+            margin-left:6%;
+            width:88%;
+        }
+        .Company_Third_card{
+            width:50% !important;
+            margin-left:9% !important;
+            height:490px !important;
+            margin-top:10% !important;
+            border-radius:5px;
+        }
+        .Company_Second_card{
+            width:50% !important;
+            height:490px !important;
+            margin-top:10% !important;
+            border-radius:5px;
+        }
+        .Company_para3{
+            margin-top:18%;
+            margin-left:10%;
+            margin-bottom:13%;
+        }
+        .Company_para3 p{
+            font-size:22px !important;
+        }
+        .Company_para4{
+            margin-top:18% !important;
+        }
+        .Company_para4 p{
+            font-size:22px !important;
+            line-height:35px !important;
+        }
+        .Company_para5{
+            margin-top:32% !important;
+            width:80% !important;
+        }
+        .Company_para5 p{
+            font-size:22px !important;
+        }
+    }
+    @media screen and (max-width:768px){
+        .Company_Whole_card{
+            width:94% !important;
+            height:470px !important;
+            margin-left:3% !important;
+        }
+        .Company_Second_card{
+            height:450px !important;
+        }
+        .Company_Third_card{
+            margin-left:7% !important;
+            height:450px !important;
+        }
+        .Company_Para2{
+            width:95% !important;
+        }
+        .Company_First_card{
+            margin:30px auto !important;
+            float:none !important;
+            height: 160px !important;
+            width:55% !important;
+        }
+        .Company_Para{
+            margin:0 auto !important;
+            float:none !important;
+            margin-left:38% !important;
+            margin-top:-4% !important;
+        } 
+        .Company_para3{
+            margin-bottom:16%;
+            margin-left:6% !important;
+        }
+        .Company_para3 p{
+            font-size:20px !important;
+        }
+        .Company_para4{
+            margin-top:19% !important;
+        }
+        .Company_para4 p{
+            line-height: 30px !important; 
+            font-size:20px !important;
+        }
+        .Company_para5 p{
+            font-size:20px !important;
+        }
+        .Company_para5{
+            margin-top:33% !important;
+            width:90% !important;
+        }
+    }
+    @media screen and (max-width:767px){
+        .Company_row2{
+            display:flex !important;
+            flex-direction:column !important;
+        }
+        .Company_Whole_card{
+            height:400px !important;
+            margin-top:50px !important;
+        }
+        .Company_First_card{
+            width:80% !important;
+            height:120px !important;
+        }
+        .Company_First_card p{
+            font-size:18px !important;
+            margin-top:50px;
+        }
+        .Company_Para{
+            width:45% !important;
+            margin-left:31% !important; 
+        }
+        .Company_Para p{
+            /* margin-top:10%; */
+            font-size:18px;
+        }
+        .Company_Para2{
+           margin-top:7% !important;
+            width:80% !important;
+            font-size: 12.5px !important;
+            margin-left:10% !important;
+        }
+        .Company_Second_card{
+            margin-top:20% !important;
+            margin-left:0% !important;
+            width:100% !important;
+            height:380px !important;
+        }
+        .Company_Third_card{
+            margin-top:4% !important; 
+            margin-left:0% !important;
+            width:100% !important;
+            height:380px !important;
+        }
+        .Company_para3{
+           margin-left:0% !important;
+           margin-top:15% !important;
+        }
+        .Company_para3 p{
+            text-align: center !important;
+           font-size:18px !important;
+           
+        }
+        .Company_para4{
+            margin-left:11% !important;
+            margin-top:13% !important;
+        }
+        .Company_para5{
+            margin-left:11% !important;
+            margin-top:27% !important;
+            width:77% !important;
+        }
+        .Company_para4 p{
+            line-height: 35px !important;
+            font-size:18px !important;
+        }
+        .Company_para5 p{
+            font-size:18px !important;
+        }
+    }
+    @media screen and (min-width:541px) and (max-width:680px){
+        .Company_First_card{
+            width:60% !important;
+        }
+        .Company_Para{
+            margin-left:37% !important;
+        }
+        .Company_para2 {
+            width:85% !important;
+        }
+        .Company_para2 p{
+            font-size:15px !important;
+        }
+        .Company_para3{
+            margin-top:7% !important;
+            margin-bottom:11% !important;
+        }
+        .Company_para5{
+            margin-top:20% !important;
+        }
+    }
+     @media screen and (min-width:681px) and (max-width:766px){
+        .Company_First_card{
+            width:55% !important;
+        }
+        .Company_Para{
+            margin-left:40% !important;
+        }
+         .Company_para2 {
+            margin-top:3% !important;
+        } 
+        .Company_para2 p{
+            font-size:16px !important;
+        } 
+        .Company_para3{
+            margin-top:9% !important;
+            margin-bottom:0% !important;
+        }
+        .Company_para4{
+            width:60% !important;
+            margin-top:10% !important;
+        }
+        .Company_para5{
+            margin-top:15% !important;
+        } 
+    } 
+    @media screen and (min-width:460px) and (max-width:540px){
+        .Company_para3{
+            margin-top:10% !important;
+            margin-bottom:10% !important;
+        }
+        .Company_para4{
+            margin-top:10% !important;
+            margin-bottom:10% !important;
+        }
+        .Company_para5{
+            margin-top:14% !important;
+            margin-bottom:10% !important;
+            width:50% !important;
+        }
+    }
+    @media screen and (max-width:320px){
+        .Company_Para{
+            width:60% !important;
+        }
+        .Company_Para2{
+            margin-top:5% !important;
+        }
+        .Company_para5{
+            width:88% !important;
+        }
+    }
+    @media screen and (max-width:280px){
+        .Company_First_card p{
+            font-size:15px !important;
+        }
+        .Company_para4 p{
+            font-size:15px !important;
+        }
+        .Company_para5 p{
+            font-size:15px !important;
+        }
+        .Company_Para{
+            margin-left:30% !important;
+        }
+        .Company_Para p{
+            font-size:15px !important;
+        }
+        .Company_Para2{
+            width:100% !important;
+        }
+        .Company_para3{
+           margin-left:0% !important;
+           margin-top:15% !important;
+           margin-bottom: 25% !important;
+        }
+        .Company_para3 p{
+            text-align: center !important;
+           font-size:15px !important;
+           
+        }
+    }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.i_nav_main{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+.Company_main{
+    margin-top:20px;
+}
+.navm{
+    /* border-style: solid; */
+    width: 35%; 
+    display: inline-block;
+}
+.navm p{
+    font-size: 28px;
+    font-weight: 600;
+}
+@media  screen and (max-width: 1092px){
+    .navm p{
+        font-size: 24px;
+    }
+    .nav-tick img{
+        width:50px;
+    }
+    .nav-men img{
+        width:30px;
+    }
+    .nav-men{
+        margin-left:20px !important;
+    }
+    .nav-bell img{
+        width:25px;
+    }
+    .nav-tick{
+        margin-right: -15px;
+    }
+    .nav-bell{
+        margin: 0 -10px;
+    }
+}
+@media  screen and (max-width: 948px){
+    .navm p{
+        font-size: 22px;
+    }
+}
+@media  screen and (max-width: 864px){
+    .navm p{
+        font-size: 20px;
+    }
+    .nav-tick img{
+        width:40px;
+    }
+    .nav-men img{
+        width:25px;
+    }
+    .nav-bell img{
+        width:20px;
+    }
+    .nav-logout img {
+        width: 35px;
+        height:auto;
+        margin-right: -15px;
+    }
+    .nav-tick{
+        margin-right: -20px;
+    }
+    .nav-bell{
+        margin: 0 -15px;
+    }
+}
+@media  screen and (max-width: 864px){
+    .navm p{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 577px){
+    .navm{
+        margin-left: 3%;
+    }
+    
+}
+@media  screen and (max-width: 578px){
+    .navl{
+        width:35%;
+    }
+    .nav-tick{
+        margin-right: 0px;
+    }
+    .nav-bell{
+        margin: 0px;
+    }
+    .nav-men{
+        margin-left: 0px !important;
+        margin-right: -10px;
+    }
+    .nav-logout img {
+        width: 30px;
+        height:auto;
+        margin-left: 300%;  
+    }
+    
+}
+@media  screen and (max-width: 526px){
+    .nav-tick , .nav-men , .nav-bell{
+        /* border-style: solid; */
+    }
+    .nav-tick a, .nav-men a, .nav-bell a{
+        padding: 0px;
+    }
+    .nav-tick{
+        width: 30%;
+    }
+    .nav-men{
+        margin-left: 7px;
+        margin-right: 2px;
+    }
+    .navm p{
+        font-size: 18px;
+    }
+}
+@media  screen and (max-width: 496px){
+    .nav-tick img{
+        width:30px;
+    }
+    .nav-men img{
+        width:20px;
+    }
+    .nav-bell img{
+        width:15px;
+    }
+    .nav-logout img {
+        width: 25px;
+        height:auto;
+        margin-left: 200%;  
+    }
+    /* .nav-logout{
+        margin-top: 0% !important;
+    } */
+    .navm p{
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width: 441px){
+    .nav-tick img{
+        width:25px;
+    }
+    .nav-men img{
+        width:15px;
+    }
+    .nav-men{
+        margin-left: 1px;
+    }
+    .nav-bell img{
+        width:10px;
+    }
+    .nav-logout img {
+        width: 20px;
+        height:auto;
+        margin-left: 200%;  
+    }
+    .navm p{
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width: 399px){
+    .navl{
+        margin-left: 0px;
+    }
+    .nav-men{
+        margin-left: -5px;
+    }
+    .navm p{
+        font-size: 14px;
+    }
+    .nav-logout img {
+        margin-left: 400%;  
+    }
+}
+@media  screen and (max-width: 319px){
+    .navm p{
+        font-size: 12px;
+    }
+    .nav-men{
+        margin-left: -3px;
+    }
+    .nav-bell{
+        margin-left:-5px;
+    }
+}
+@media  screen and (max-width: 295px){
+    .navm p{
+        font-size: 10px !important;
+    }
+    .navl{
+        width:120px !important;
+    }
+}
+#mySidenav{
+    margin: 0 !important;
+}
+#mySidenav{
+         margin-top: 100px !important;
+        margin-left: -8.5% !important;
+    }
+@media screen and (max-width:1093px) {
+
+    #mySidenav{
+        margin-top: 85px !important;
+    }
+}
+@media screen and (max-width:865px) {
+    #mySidenav{
+        margin-top: 79px !important;
+    }
+}
+@media screen and (max-width:525px) {
+    #mySidenav{
+        margin-top:23px !important;
+    }
+}
+@media screen and (max-width:486px) {
+    #mySidenav{
+        margin-top: 64px !important;
+    }
+}
+@media screen and (max-width:281px) {
+    #mySidenav{
+        margin-top: 28px !important;
+    }
+}
+@media screen and (max-width:1363px) {
+    #mySidenav{
+        margin-left: -10% !important;
+    }
+}
+@media screen and (max-width:1155px) {
+    #mySidenav{
+        margin-left: -11% !important;
+    }
+}
+@media screen and (min-width:988px) and (max-width:1094px){
+    #mySidenav{
+        margin-left: -7% !important;
+    }
+}
+@media screen and (max-width:987px) {
+    #mySidenav{
+        margin-left: -8% !important;
+    }
+}
+@media screen and (max-width:770px) {
+    #mySidenav{
+        margin-left: -8% !important;
+    }
+}
+@media screen and (min-width:526px) and (max-width:576px) {
+    #mySidenav{
+        margin-left: -14% !important;
+    }
+}
+@media screen and (max-width:526px) {
+    #mySidenav{
+        margin-left: -17% !important;
+    }
+}
+@media screen and (max-width:399px) {
+    #mySidenav{
+        margin-left: -12% !important;
+    }
+}
+@media screen and (min-width:1023px) and (max-width:1025px){
+    #mySidenav{
+        margin-left: -9% !important;
+    }
+    .nav-men img{
+        margin-left:12px !important;
+    }
+}
+@media screen and (min-width:767px) and (max-width:769px){
+    #mySidenav{
+        margin-left: -9% !important;
+    }
+    .nav-men img{
+        margin-left:7px !important;
+    }
+}
+@media screen and (min-width:488px) and (max-width:525px){
+    #mySidenav{
+        margin-top: 76px !important;
+    }
+} 
+@media screen and (min-width:300px) and (max-width:320px){
+    #mySidenav{
+        margin-top: 64px !important;
+    }
+    .navm{
+        width:40% !important;
+    }
+    .navm p{
+        font-size:14px !important;
+    }
+} 
+@media screen and (min-width:279px) and (max-width:281px){
+    #mySidenav{
+        margin-left: -15% !important;
+    }
+} 
+#dropdownMenuLink::after {
+    visibility: hidden;
+}  
+</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-sidermenu.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap-sidermenu.js"></script>
+    <script>
+        function openNav() {
+            if(document.getElementById("mySidenav").style.display=="none")
+            {
+             document.getElementById("mySidenav").style.display = "block";
+             document.getElementById("mySidenav").style.marginTop = "100px";
+             document.getElementById("mySidenav").style.marginLeft = "-130px";
+    
+            }
+          else{
+          document.getElementById("mySidenav").style.display = "none";
+        }
+        // if(document.getElementById("mySidenav").style.marginLeft=="-600px")
+        //     {
+        //      //document.getElementById("mySidenav").style.display = "block";
+        //       document.getElementById("mySidenav").style.marginLeft = "-140px";
+        //     }
+        //   else{
+        //     document.getElementById("mySidenav").style.marginLeft="-600px";
+        // }
+        }
+
+    
+</script>
+</head>
+
+
+<body class="Company_Main_Body">
+
+    <nav style="background-color: #F3F7FF">
+        <div class="nbar" style="background-color: #F3F7FF">
+            <div class="navl">
+                <div class="nav-tick"><img src="tick.png" /></div>
+
+
+                <div class="nav-men">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="openNav()">
+                        <img src="menu.png" />
+                    </a>
+
+
+                    <ul id="mySidenav" class="dropdown-menu men  multi-level menu-siderbar nav flex-column" aria-labelledby="dropdownMenuLink" style="display:none;padding-right:10px;width:20%;background-color:#FFFFFF;">
+                        <!-- <li class="nav-item">
+                            <a href="javascript:;" class="nav-link nav-link-parent">
+                                <i class="menu-icon fa fa-th"></i> jQueryScript
+                            </a>
+                            <ul class="menu-siderbar-child nav flex-column">
+                                <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link active">
+                                        <i class="menu-icon fa fa-bolt"></i> jQuery
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link">
+                                        <i class="menu-icon fa fa-bolt"></i> HTML5
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:;" class="nav-link">
+                                        <i class="menu-icon fa fa-bolt"></i> CSS/CSS3
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="javascript:;" class="hello_tar nav-link nav-link-parent" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label" style="color:#1D2F6F;font-weight:600;font-size:17px;">Internships&nbsp;</span></a>
+                            <ul class="menu-siderbar-child nav flex-column" style="border-radius: 10px;font-size: 17px;width:100%;height:60%;background-color:#FFFFFF;box-shadow:1px 2px 2px 1px rgba(0,0,0,0.2);padding-top:30px;padding-bottom:30px;margin-top:-10px;position:relative;z-index:-1;">
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a  href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#PostInternship</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#MyColleges</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#IDirect</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:;" class="hello_tar nav-link nav-link-parent" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label" style="color:#1D2F6F;font-weight:600;font-size:17px;">Chat&nbsp;</span></a>
+                            <ul class="menu-siderbar-child nav flex-column" style="margin-left: 1px; border-radius: 10px;font-size: 17px;width:100%;height:60%;background-color:#FFFFFF;box-shadow:1px 2px 2px 1px rgba(0,0,0,0.2);padding-top:30px;padding-bottom:30px;margin-top:-10px;position:relative;z-index:-1;">
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#MyCollege</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">#Company</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label" style="color:#1D2F6F;font-weight:600;font-size:17px;">Day to Day Reports&nbsp;</span></a></li>
+                        <li class="nav-item">
+                            <a href="javascript:;" class="hello_tar nav-link nav-link-parent" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label" style="color:#1D2F6F;font-weight:600;font-size:17px;">My Profile&nbsp;</span></a>
+                            <ul class="menu-siderbar-child nav flex-column" style="margin-left: 1px; border-radius: 10px;font-size: 17px;width:100%;height:100%;background-color:#FFFFFF;box-shadow:1px 2px 2px 1px rgba(0,0,0,0.2);padding-top:30px;padding-bottom:30px;margin-top:-10px;position:relative;z-index:-1;">
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Edit Account</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Edit Internships</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Change Pwd/Email id/ phone no.</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Deactivate Account</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Delete Permanently</a></li>
+                                <li style="background-color:#FFFFFF;box-shadow:3px 3px 3px 2px rgba(0,0,0,0.15);width:100%;font-size:12px;margin-left:0px;"><a href="javascript:;" class="nav-link active" style="width:100%;padding:0;padding-left:10px;color:#1D2F6F;font-size:15.5px;background-color:#FFFFFF;">Terms and Conditions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label" style="color:#1D2F6F;font-weight:600;font-size:17px;">Intern Evaluation&nbsp;</span></a></li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label" style="color:#1D2F6F;font-weight:600;font-size:17px;">College Evaluation&nbsp;</span></a></li>
+                        <li class="nav-item"><a href="#" class="hello_tar nav-link"><span class="nav-label" style="color:#1D2F6F;font-weight:600;font-size:17px;">Create Internships&nbsp;</span></a></li>
+                    </ul>
+
+
+                </div>
+
+
+                <!-- <div class="nav-men"><img src="menu.png"/></div> -->
+                <div class="nav-bell">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="bell.png" />
+                    </a>
+
+                    <div class="dropdown-menu bellu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item msgs" href="#">Welcome to TalentServe <br> Log in every day to receive notifications<br>for your job</a>
+
+                    </div>
+                </div>
+
+
+                <!-- <div class="nav-bell"><img src="bell.png"/></div> -->
+            </div>
+
+            <div class="navm">
+                <p >Company Profile</p>
+            </div>
+
+            <div class="navr">
+                <div class="nav-logout Company-nav-logout" style="margin-top:4px;"><a href="#"><img src="logout.png" /></a></div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="Company_Whole_card">
+            <div class="d-flex flex-column">
+
+                <div class=" Company_row1">
+                    <div class="Company_First_card shadow">
+                        <p>Company Logo</p>
+                    </div>
+                    <div class="Company_Para">
+                        <P>Company Name</P>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="Company_Para2">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+
+                <div class=" Company_row2">
+
+                    <div class="Company_Second_card" style="border-style:solid;">
+                        <div class="Company_para3">
+                            <p>Employee Name : Yash</p>
+                        </div>
+
+                        <div class="Company_para3">
+                            <p>Designation of Employee : HR</p>
+                        </div>
+
+                        <div class="Company_para3">
+                            <p>Phone Number : 6699668899</p>
+                        </div>
+
+                        <div class="Company_para3">
+                            <p>Email ID : yash123@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="Company_Third_card">
+                        <div class="Company_para4">
+                            <p>Company Address :
+
+                                xxxxxxxxxxxxxxxxxxxxxxx
+                                
+                                xxxxxxxxxxxxxxxxx</p>
+                        </div>
+                        <div class="Company_para5">
+                            <p>GST Licence or PAN Details :
+                                Lorem Impulse</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+/**
+ * author: guanheng88
+ * version: 1.0.0
+ */
+.menu-siderbar {
+    width: 240px;
+    /* 计算距离顶部nav的距离，可根据实际情况调整 */
+    min-height: calc(100vh - 56px);
+    background: #edf0f1;
+    border-right: 1px solid #dfe4e6;
+}
+.menu-siderbar .nav-item {
+    position: relative;
+}
+.menu-siderbar .nav-item .nav-link-parent:after {
+    position: absolute;
+    content: "\f0D7";
+    font-family: FontAwesome;
+    font-size: 27px;
+    line-height: 10px;
+    right: 14px;
+    top: 17px;
+}
+.menu-siderbar .nav-item.open .nav-link-parent:after {
+    content: "\f0D8";
+}
+.menu-siderbar .nav-item .nav-link {
+    color: #1D2F6F;
+}
+.menu-siderbar .nav-item .nav-link .menu-icon {
+    margin-right: 6px;
+}
+.menu-siderbar .nav-item .menu-siderbar-child {
+    display: none;
+}
+.menu-siderbar .nav-item .menu-siderbar-child .nav-link {
+    padding-left: calc(1rem + 15px);
+}
+.menu-siderbar .nav-item.open .menu-siderbar-child{
+    display: block;
+}
